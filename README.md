@@ -1,6 +1,3 @@
-✅ README CORRIGIDO
-markdown
-
 # 🎯 SkillMatch JS
 
 ## 📋 Sobre o Projeto
@@ -27,7 +24,7 @@ O objetivo é **didático**: demonstrar conceitos fundamentais de **JavaScript p
 
 ## 🧠 Conceitos de JavaScript Aplicados
 
-Este projeto foi desenvolvido para praticar **JavaScript puro (ES6+)**.
+Este projeto foi desenvolvido para praticar **JavaScript puro (ES6+)** .
 
 | Conceito | Onde foi aplicado |
 |----------|-------------------|
@@ -49,8 +46,8 @@ Este projeto foi desenvolvido para praticar **JavaScript puro (ES6+)**.
 | **IIFE** | Função autoexecutável |
 | **Closure** | Contador de análises privado |
 | **Promises** | Função `buscarVagas` simulando API |
-| **`setTimeout`** | Atraso de 3 segundos na busca |
-| **`async/await`** | Função principal `iniciarSistema` |
+| **`setTimeout`** | Atraso de 1 segundo na busca |
+| **`async/await** | Função principal `iniciarSistema` |
 | **`toFixed()`** | Formatação de casas decimais |
 | **`parseFloat()`** | Conversão de string para número |
 | **`console.log`** | Exibição de resultados |
@@ -61,9 +58,7 @@ Este projeto foi desenvolvido para praticar **JavaScript puro (ES6+)**.
 
 SkillMatch-JS/
 ├── index.js # Código principal (JavaScript puro)
-├── index.html # (opcional) Para executar no navegador
 ├── README.md # Documentação do projeto
-└── .gitignore # Arquivos ignorados pelo Git
 text
 
 
@@ -71,14 +66,14 @@ text
 
 ## 🚀 Como Executar
 
-1. Abra o arquivo `index.html` no navegador
-2. Pressione **F12** para abrir o console
-3. Aguarde 3 segundos (simulação de busca)
-4. Veja os resultados
+   Abra seu navegador
 
----
+    Pressione F12 para abrir o console
 
-## 📊 Exemplo de Saída
+    Veja os resultados
+
+
+# 📊 Exemplo de Saída
 
 🚀 Sistema v1.0.0 iniciando...
 Buscando vagas...
@@ -86,63 +81,57 @@ Buscando vagas...
 📊 RESULTADOS:
 
 👉 Front-End Jr
-Compatibilidade: 66.67%
-Faltam: css
-Recomendada? SIM
+   Compatibilidade: 66.67%
+   Faltam: css
+   Recomendada? SIM
 🏢 Empresa: Tech Co
 💰 Salário: R$ 3000
 
 👉 Dev Jr
-Compatibilidade: 33.33%
-Faltam: react, git
-Recomendada? NÃO
+   Compatibilidade: 33.33%
+   Faltam: react, git
+   Recomendada? NÃO
 
 👉 Junior Dev
-Compatibilidade: 33.33%
-Faltam: css, git
-Recomendada? NÃO
+   Compatibilidade: 33.33%
+   Faltam: css, git
+   Recomendada? NÃO
 
-📋 Vagas: Front-End Jr, Dev Jr, Junior Dev
-✅ Compatíveis: Front-End Jr
-📊 Média: 44.44%
-🔢 Análises: 1
-text
+📋 Nomes das vagas: [ 'Front-End Jr', 'Dev Jr', 'Junior Dev' ]
+✅ Vagas compatíveis: [ 'Front-End Jr' ]
+📊 Média geral: 44.44%
+🔢 Total de análises realizadas: 1
 
+🛠 Tecnologia
 
----
+    JavaScript (ES6+) — puro, sem bibliotecas ou frameworks
 
-## 🛠 Tecnologia
-
-- **JavaScript (ES6+)** — puro, sem bibliotecas ou frameworks
-
----
-
-## 📝 Objetivo de Aprendizado
+📝 Objetivo de Aprendizado
 
 Este projeto foi criado para consolidar conhecimentos em:
 
-- Sintaxe moderna de JavaScript
-- Manipulação de objetos e arrays
-- Métodos funcionais de array
-- Programação orientada a objetos com classes
-- Programação assíncrona com Promises e async/await
-- Conceitos avançados como closures e IIFE
-- Boas práticas de versionamento com Git
+    Sintaxe moderna de JavaScript
 
----
+    Manipulação de objetos e arrays
 
-## 👤 Autora
+    Métodos funcionais de array
 
-**Sabrina Correa**
+    Programação orientada a objetos com classes
 
-- GitHub: [@eubinacorrea](https://github.com/eubinacorrea)
+    Programação assíncrona com Promises e async/await
 
----
+    Conceitos avançados como closures e IIFE
 
-## 📝 Licença
+    Boas práticas de versionamento com Git
+
+👤 Autora
+
+Sabrina Correa
+
+    GitHub: @eubinacorrea
+
+📝 Licença
 
 Este projeto é livre para estudos e modificações.
 
----
-
-⭐ **Sugestão:** Experimente adicionar novos candidatos com habilidades diferentes e veja como os resultados mudam no console!
+⭐ Sugestão: Experimente adicionar novos candidatos com habilidades diferentes e veja como os resultados mudam no console!
