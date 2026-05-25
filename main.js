@@ -94,3 +94,34 @@ function buscarVagas() {
   });
 }
 
+// ----- FUNÇÃO PRINCIPAL -----
+async function iniciarSistema() {
+  console.log("🚀 Sistema v" + sistemaVersao + " iniciando...");
+  console.log("Buscando vagas...\n");
+
+  const vagasCarregadas = await buscarVagas();
+
+  processarResultados(vagasCarregadas, (resultados) => {
+    console.log("📊 RESULTADOS:");
+    resultados.forEach(r => {
+      console.log(`\n👉 ${r.vaga}`);
+      console.log(`   Compatibilidade: ${r.percentual}`);
+      console.log(`   Faltam: ${r.faltantes.length ? r.faltantes.join(", ") : "nenhuma ✅"}`);
+      console.log(`   Recomendada? ${r.compativel ? "SIM" : "NÃO"}`);
+
+      // NOVO: Se for compatível, exibe empresa e salário
+      if (r.compativel) {
+        console.log(`   🏢 Empresa: ${r.empresa}`);
+        console.log(`   💰 Salário: R$ ${r.salario}`);
+      }
+    });
+  });
+
+  console.log(`\n📋 Vagas: ${nomesVagas.join(", ")}`);
+  console.log(`✅ Compatíveis: ${compativeis.map(v => v.cargo).join(", ") || "nenhuma"}`);
+  console.log(`📊 Média: ${media.toFixed(2)}%`);
+  console.log(`🔢 Análises: ${contadorAnalises()}`);
+}
+
+// ----- EXECUÇÃO -----
+iniciarSistema();
