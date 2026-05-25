@@ -39,3 +39,31 @@ const vagas = [
   new VagaFrontEnd("Web Agency", "Junior Dev", ["html", "css", "git"], 2000),
 ];
 
+<<<<<<< Updated upstream
+=======
+// ----- FUNÇÃO DE COMPATIBILIDADE -----
+function calcularCompatibilidade(candidato, vaga) {
+  let match = 0;
+  let faltam = [];
+
+  for (let req of vaga.requisitos) {
+    if (candidato.habilidades[req]) {
+      match++;
+    } else {
+      faltam.push(req);
+    }
+  }
+
+  const percentual = (match / vaga.requisitos.length) * 100;
+
+  return {
+    vaga: vaga.cargo,
+    empresa: vaga.empresa,        
+    salario: vaga.salario,        
+    percentual: percentual.toFixed(2) + "%",
+    faltantes: faltam,
+    compativel: percentual >= 60,
+  };
+}
+
+>>>>>>> Stashed changes
