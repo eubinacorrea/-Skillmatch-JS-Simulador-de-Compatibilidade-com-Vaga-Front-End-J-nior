@@ -81,3 +81,16 @@ function processarResultados(vagas, callback) {
   callback(resultados);
 }
 
+// ----- IIFE + CLOSURE -----
+const contadorAnalises = (() => {
+  let count = 0;
+  return () => ++count;
+})();
+
+// ----- PROMISE (simulação assíncrona) -----
+function buscarVagas() {
+  return new Promise((resolve) => {
+    setTimeout(() => resolve(vagas), 3000); // 3 segundos
+  });
+}
+
