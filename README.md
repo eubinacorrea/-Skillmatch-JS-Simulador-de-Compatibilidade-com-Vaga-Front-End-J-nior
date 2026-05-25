@@ -75,6 +75,7 @@ text
 
 # 📊 Exemplo de Saída
 
+
 🏢 Detalhes: Front-End Jr em Tech Co — R$ 3000
 📋 Requisitos: javascript, html, css
 🚀 Sistema v1.0.0 iniciando...
