@@ -2,10 +2,10 @@ var sistemaVersao = "1.0.0";
 
 // ----- CANDIDATO -----
 const candidato = {
-  nome: "João Silva",
+  nome: "Sabrina Babiss Correa",
   habilidades: {
-    javascript: 8,
-    html: 7,
+    javascript: 7,
+    html: 8,
   },
 };
 
