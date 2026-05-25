@@ -1,3 +1,6 @@
+✅ README CORRIGIDO
+markdown
+
 # 🎯 SkillMatch JS
 
 ## 📋 Sobre o Projeto
@@ -15,6 +18,7 @@ O objetivo é **didático**: demonstrar conceitos fundamentais de **JavaScript p
 - ✅ Cálculo automático de compatibilidade (percentual)
 - ✅ Identificação de habilidades faltantes
 - ✅ Indicação de vagas recomendadas (≥ 60%)
+- ✅ Exibição de empresa e salário para vagas compatíveis
 - ✅ Cálculo de média geral de compatibilidade
 - ✅ Simulação de busca assíncrona com `setTimeout`
 - ✅ Contador de análises com closure
@@ -23,7 +27,7 @@ O objetivo é **didático**: demonstrar conceitos fundamentais de **JavaScript p
 
 ## 🧠 Conceitos de JavaScript Aplicados
 
-Este projeto foi desenvolvido para praticar **JavaScript puro (ES6+)** .
+Este projeto foi desenvolvido para praticar **JavaScript puro (ES6+)**.
 
 | Conceito | Onde foi aplicado |
 |----------|-------------------|
@@ -45,8 +49,8 @@ Este projeto foi desenvolvido para praticar **JavaScript puro (ES6+)** .
 | **IIFE** | Função autoexecutável |
 | **Closure** | Contador de análises privado |
 | **Promises** | Função `buscarVagas` simulando API |
-| **`setTimeout`** | Atraso de 1 segundo na busca |
-| **`async/await** | Função principal `iniciarSistema` |
+| **`setTimeout`** | Atraso de 3 segundos na busca |
+| **`async/await`** | Função principal `iniciarSistema` |
 | **`toFixed()`** | Formatação de casas decimais |
 | **`parseFloat()`** | Conversão de string para número |
 | **`console.log`** | Exibição de resultados |
@@ -67,72 +71,78 @@ text
 
 ## 🚀 Como Executar
 
-   Abra seu navegador
+1. Abra o arquivo `index.html` no navegador
+2. Pressione **F12** para abrir o console
+3. Aguarde 3 segundos (simulação de busca)
+4. Veja os resultados
 
-    Pressione F12 para abrir o console
+---
 
-    Veja os resultados
+## 📊 Exemplo de Saída
 
-# 📊 Exemplo de Saída
-
-
-🏢 Detalhes: Front-End Jr em Tech Co — R$ 3000
-📋 Requisitos: javascript, html, css
 🚀 Sistema v1.0.0 iniciando...
 Buscando vagas...
 
 📊 RESULTADOS:
 
 👉 Front-End Jr
-   Compatibilidade: 66.67%
-   Faltam: css
-   Recomendada? SIM
+Compatibilidade: 66.67%
+Faltam: css
+Recomendada? SIM
+🏢 Empresa: Tech Co
+💰 Salário: R$ 3000
 
 👉 Dev Jr
-   Compatibilidade: 33.33%
-   Faltam: react, git
-   Recomendada? NÃO
+Compatibilidade: 33.33%
+Faltam: react, git
+Recomendada? NÃO
 
 👉 Junior Dev
-   Compatibilidade: 33.33%
-   Faltam: css, git
-   Recomendada? NÃO
+Compatibilidade: 33.33%
+Faltam: css, git
+Recomendada? NÃO
 
-📋 Nomes das vagas: [ 'Front-End Jr', 'Dev Jr', 'Junior Dev' ]
-✅ Vagas compatíveis: [ 'Front-End Jr' ]
-📊 Média geral: 44.44%
-🔢 Total de análises realizadas: 1
+📋 Vagas: Front-End Jr, Dev Jr, Junior Dev
+✅ Compatíveis: Front-End Jr
+📊 Média: 44.44%
+🔢 Análises: 1
+text
 
-🛠 Tecnologia
 
-    JavaScript (ES6+) — puro, sem bibliotecas ou frameworks
+---
 
-📝 Objetivo de Aprendizado
+## 🛠 Tecnologia
+
+- **JavaScript (ES6+)** — puro, sem bibliotecas ou frameworks
+
+---
+
+## 📝 Objetivo de Aprendizado
 
 Este projeto foi criado para consolidar conhecimentos em:
 
-    Sintaxe moderna de JavaScript
+- Sintaxe moderna de JavaScript
+- Manipulação de objetos e arrays
+- Métodos funcionais de array
+- Programação orientada a objetos com classes
+- Programação assíncrona com Promises e async/await
+- Conceitos avançados como closures e IIFE
+- Boas práticas de versionamento com Git
 
-    Manipulação de objetos e arrays
+---
 
-    Métodos funcionais de array
+## 👤 Autora
 
-    Programação orientada a objetos com classes
+**Sabrina Correa**
 
-    Programação assíncrona com Promises e async/await
+- GitHub: [@eubinacorrea](https://github.com/eubinacorrea)
 
-    Conceitos avançados como closures e IIFE
+---
 
-    Boas práticas de versionamento com Git
-
-👤 Autora
-
-Sabrina Correa
-
-    GitHub: @eubinacorrea
-
-📝 Licença
+## 📝 Licença
 
 Este projeto é livre para estudos e modificações.
 
-⭐ Sugestão: Experimente adicionar novos candidatos com habilidades diferentes e veja como os resultados mudam no console!
+---
+
+⭐ **Sugestão:** Experimente adicionar novos candidatos com habilidades diferentes e veja como os resultados mudam no console!
