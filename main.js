@@ -39,8 +39,7 @@ const vagas = [
   new VagaFrontEnd("Web Agency", "Junior Dev", ["html", "css", "git"], 2000),
 ];
 
-<<<<<<< Updated upstream
-=======
+ 
 // ----- FUNÇÃO DE COMPATIBILIDADE -----
 function calcularCompatibilidade(candidato, vaga) {
   let match = 0;
@@ -64,5 +63,21 @@ function calcularCompatibilidade(candidato, vaga) {
     faltantes: faltam,
     compativel: percentual >= 60,
   };
+};
+
+
+// ----- MÉTODOS DE ARRAY -----
+const nomesVagas = vagas.map(v => v.cargo);
+const compativeis = vagas.filter(v => calcularCompatibilidade(candidato, v).compativel);
+const primeira = vagas.find(v => v.empresa === "Tech Co");
+const media = vagas.reduce(
+  (acc, v) => acc + parseFloat(calcularCompatibilidade(candidato, v).percentual),
+  0
+) / vagas.length;
+
+// ----- CALLBACK -----
+function processarResultados(vagas, callback) {
+  const resultados = vagas.map(v => calcularCompatibilidade(candidato, v));
+  callback(resultados);
 }
->>>>>>> Stashed changes
+
